@@ -1,0 +1,32 @@
+Source: mousetrap.js
+Section: web
+Priority: extra
+Maintainer: Zed Pobre <zed@debian.org>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://craig.is/killing/mice
+#Vcs-Git: git://git.debian.org/collab-maint/mousetrap.js.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/mousetrap.js.git;a=summary
+
+Package: libjs-mousetrap
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simple library for handling keyboard shortcuts in Javascript
+ There are no external dependencies, no framework is required
+ .
+ You are not limited to keydown events
+ (You can specify keypress, keydown, or keyup or let Mousetrap choose
+ for you).
+ .
+ You can bind key events directly to special keys such as ? or *
+ without having to specify shift+/ or shift+8 which are not consistent 
+ across all keyboards
+ .
+ It works with international keyboard layouts
+ .
+ You can bind Gmail like key sequences in addition to regular keys and
+ key combinations
+ .
+ You can programatically trigger key events with the trigger() method
+ .
+ It works with the numeric keypad on your keyboard
