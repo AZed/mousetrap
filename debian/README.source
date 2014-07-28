@@ -6,4 +6,7 @@ Upstream source is in branch master. Version tags have no preceding 'v'.
 At each release, the appropriate tag is merged into branch debian,
 which is then updated for the Debian release.
 
- -- Zed Pobre <zed@debian.org>, Thu, 14 Mar 2013 16:27:56 -0400
+Builds are then made with git-buildpackage, which generates the
+"upstream tarball" automatically.
+
+ -- Zed Pobre <zed@debian.org>, Mon, 28 Jul 2014 11:14:41 -0400
